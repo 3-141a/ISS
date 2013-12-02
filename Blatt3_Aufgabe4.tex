@@ -1,0 +1,75 @@
+\documentclass[10pt]{article}
+\begin{document}
+
+\title{ISS - Uebungsblatt 3}
+\author{Pia Kullik (BSc Informatik, Matr.nr. 2051889) \and Robert Hemstedt (Nebenfach, Matr.nr. 2536252)}
+\maketitle
+
+\section{Aufgabe 4 - Raeumliche Transformationen}
+
+Die Transformation gelingt durch Drehung des gegeben Vektors um 35 Grad und anschliessende Translation um $(1, 2.5)$. Bestimme die entsprechenden Matrizen und multipliziere sie zur Transformationsmatrix $K_{12}$:
+
+
+\[
+D_{35} =
+\left( {\begin{array}{ccc}
+cos(35) & -sin(35) & 0\\
+sin(35 & cos(35) & 0\\
+0 & 0 & 1
+\end{array} } \right) 
+//Drehmatrix
+\]
+
+\[
+T =
+\left( {\begin{array}{ccc}
+1 & 0 & 1\\
+0 & 1 & 2.5 \\
+0 & 0 & 1
+\end{array} } \right) 
+//Translationsmatrix
+\]
+
+\[
+\Rightarrow K_{12} = T \ast D_{35} =
+\left( {\begin{array}{ccc}
+cos(35) & -sin(35) & 1\\
+sin(35) & cos(35) & 2.5\\
+0 & 0 & 1
+\end{array} } \right) 
+\]
+
+
+Die homogenen $K_{2}$-Koordinaten eines 2D-Punktes $\vec{v} = (2, 1.5)$ werden berechnet, indem man seine homogenen Koordinaten in $K_{1}$ mit der Transformationsmatrix $K_{12}$ multipliziert:
+
+\[
+\left( {\begin{array}{ccc}
+cos(35) & -sin(35) & 1\\
+sin(35) & cos(35) & 2.5\\
+0 & 0 & 1
+\end{array} } \right) 
+\ast
+\left( {\begin{array}{ccc}
+2\\
+1.5\\
+1
+\end{array} } \right) 
+ = 
+\left( {\begin{array}{ccc}
+2cos(35) - 1.5sin(35) + 1\\
+2sin(35) + 1.5cos(35) + 2.5\\
+1
+\end{array} } \right) 
+\approx
+\left( {\begin{array}{ccc}
+1.778\\
+4.876\\
+1
+\end{array} } \right)
+\]
+
+
+
+
+
+\end{document}

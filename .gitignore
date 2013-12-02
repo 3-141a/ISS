@@ -1,0 +1,13 @@
+*.class
+*.jar
+*.aux
+*.synctex.gz
+*.log
+*Example*.java
+src/*
+temp/*
+image/*
+.classpath
+.project
+filter_src/Colorfilter.java
+filter_src/ImageAdder.java
