@@ -11,3 +11,11 @@ image/*
 .project
 filter_src/Colorfilter.java
 filter_src/ImageAdder.java
+readme_*.txt
+ITB-Manual_*.pdf
+*.mf
+nbproject/
+build.xml
+build/
+dist/
+*.bat

@@ -1,7 +1,7 @@
 import imageToolBox.AbstractFilter;
 
 /*
- *Intelligente Sehsysteme - �bungsblatt 2
+ *Intelligente Sehsysteme - Uebungsblatt 2
  *Aufgabe 3
  *Autoren: Pia Kullik, Robert ??
  *
@@ -17,9 +17,9 @@ public class LineareGrauwertspreizung_PK_Robert extends AbstractFilter{
 	    {
 	      for(int j = 0; j < height; j++)
 	      {
-	    	dest[0][i][j] = (src[0][i][j] - min[0]) * (max[0] / (max[0] - min[0]));
-	    	dest[1][i][j] = (src[1][i][j] - min[1]) * (max[1] / (max[1] - min[1]));
-	    	dest[2][i][j] = (src[2][i][j] - min[2]) * (max[2] / (max[2] - min[2]));
+	    	dest[0][i][j] = (src[0][i][j] - min[0]) * (255 / (max[0] - min[0]));
+	    	dest[1][i][j] = (src[1][i][j] - min[1]) * (255 / (max[1] - min[1]));
+	    	dest[2][i][j] = (src[2][i][j] - min[2]) * (255 / (max[2] - min[2]));
 	      }
 	    }
 	}
