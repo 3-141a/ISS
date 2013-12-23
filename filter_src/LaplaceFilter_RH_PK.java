@@ -14,7 +14,7 @@ public class LaplaceFilter_RH_PK extends ConvolutionFilter_PK_RH {
     public void filter(double[][][] src, double[][][] dst) {
         boolean l8 = isL8.getState();
         double[][][] filtered = new double[3][width][height];
-        applyKernel(src, filtered, this.getKernel());
+        filtered = applyKernel(src, this.getKernel());
         for(int c = 0; c< 3; c++) {
             for(int i = 0; i<width;i++) {
                 for(int j = 0; j<height; j++) {
