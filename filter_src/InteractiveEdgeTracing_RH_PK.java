@@ -1,10 +1,7 @@
 
 import imageToolBox.AbstractFilter;
 import java.awt.Point;
-import java.util.Collection;
-import java.util.Iterator;
 import java.util.LinkedList;
-import java.util.Queue;
 
 /**
  *
